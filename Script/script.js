@@ -2,7 +2,7 @@ console.log("i am connected to website")
 var currentSong;
 var play= document.querySelector(".play").firstElementChild
 let getSongDeatils = async() =>{
-    let song= await fetch("/songs/")
+    let song= await fetch("https://github.com/developer-adityaSingh/Spotify-Clone/tree/main/Songs")
     let songData = await song.text()
     let div = document.createElement("div")
     div.innerHTML= `${songData}`
