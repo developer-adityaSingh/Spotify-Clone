@@ -2,7 +2,7 @@ console.log("i am connected to website")
 var currentSong;
 var play= document.querySelector(".play").firstElementChild
 let getSongDeatils = async() =>{
-    let song= await fetch("http://127.0.0.1:3000/songs/")
+    let song= await fetch("/songs/")
     let songData = await song.text()
     let div = document.createElement("div")
     div.innerHTML= `${songData}`
