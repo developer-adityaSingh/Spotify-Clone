@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1000px) {
+  :root{
+    --padding: 5px;
+  }
+    .left-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background: black;
+  }
+  
+  .right-container{
+    width: 100vw;
+  }
+
+  .mainCard{
+    height: 50vh;
+  }
+
+  .logo-section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .crossBar{
+    display: inline-block;
+    width: 24px;
+  }
+  .Visible{
+    display: inline-block;
+  }
+  .arrowContainer{
+    display: none;
+  }
+  .navbar .arrrow img{
+    width: 25vw;
+  }
+}

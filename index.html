@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="stylesheet" href="./Style/utilityClass.css" />
+    <link rel="stylesheet" href="./Style/mediaQuery.css">
+  </head>
+  <body>
+    <div class="flex p-1 container">
+      <!-- Left Container Starts -->
+      <div class="border flex left-container">
+        <!-- Logo Section Starts -->
+        <div class="logo-section rounded">
+          <div class="logo">
+            <img class="invert" src="./Assets/logo.svg" alt="Logo" />
+            <img class="invert crossBar" src="./Assets/crossMenu.svg" alt="">
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="./Assets/home.svg" alt="Home" />Home
+            </li>
+            <li>
+              <img
+                class="invert"
+                src="./Assets/search.svg"
+                alt="Search"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <!-- Logo section Ends Here -->
+        <!-- Library Section Starts -->
+        <div class="flex rounded library-section">
+          <!-- Library Heading Starts -->
+          <div class="flex library-heading">
+            <img class="invert" src="./Assets/library.svg" alt="Library" />
+            <h2>Your Library</h2>
+            <img
+              class="invert plus-button"
+              src="./Assets/plus-button.svg"
+              alt=""
+            />
+          </div>
+          <!-- Library Heading Ends -->
+          <!-- Card Section Start -->
+          <div class="mainCard flex">
+            <div class="songList rounded flex">
+              <ul></ul>
+            </div>
+
+            <!-- Card Section Ends -->
+          </div>
+        </div>
+        <!-- Library Section Ends -->
+        <!-- Footer Section Starts -->
+        <footer class="rounded footerLeft">
+          <div class="footer-left flex">
+            <p>Legal</p>
+            <p>Saftey&Primary Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>AboutAds</p>
+            <p>Accessibility</p>
+            <p>Cookies</p>
+          </div>
+          <div class="language-section">
+            <div class="flex language">
+              <img class="invert" src="./Assets/language.svg" alt="Language" />
+              <p>English</p>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer Section Ends -->
+      </div>
+      <!-- Right Container Starts here -->
+      <div class="rounded right-container">
+        <!-- Navbar Starts -->
+        <div class="flex navbar">
+          <!-- Arrow Button Starts -->
+          <div class="flex arrrow">
+            <div class="flex arrowContainer">
+              <img
+                class="invert"
+                src="./Assets/arrow-left.svg"
+                alt="Left-Arrow"
+              />
+            </div>
+            <div class="flex arrowContainer">
+              <img
+                class="invert"
+                src="./Assets/arrow-right.svg"
+                alt="Right-Arrow"
+              />
+            </div>
+            <div class="Visible">
+              <img class="invert spLogo" src="./Assets/logo.svg" alt="Logo" />
+            </div>
+          </div>
+          <!-- Arrow Button Ends -->
+          <!-- buttonSection Starts -->
+          <div class="buttons flex">
+            <div class="secondaryButton">
+              <button class="secondary-button sButton">Sign up</button>
+            </div>
+            <div class="primaryButton">
+              <button class="primary-button pButton">Log in</button>
+            </div>
+            <div class="menuBar Visible">
+              <img class="invert" src="./Assets/menu.svg" alt="Menu">
+            </div>
+            
+          </div>
+          
+          <!-- buttonSection Ends -->
+        </div>
+        <!-- Navbar Ends -->
+        <!-- songCardContainer Starts -->
+        <div class="sogCardContainer flex">
+          <!-- songCard heading starts -->
+          <div class="songCardHeading flex">
+            <h2>Popular Playlists</h2>
+            <p>show all</p>
+          </div>
+          <!-- songCard heading ends -->
+          <!-- songCardBox Starts -->
+          <div class="songCardBox flex">
+            <!-- songcard starts -->
+            <div class="songCard flex">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                alt="Artist"
+              />
+              <h3>Pritam</h3>
+              <p>Artist</p>
+            </div>
+            <!-- songcard Ends -->
+          </div>
+          <!-- songCardBox Ends -->
+        </div>
+        <!-- songCardContainer Ends -->
+        <!-- Music player Starts -->
+        <div class="musicPlayer flex">
+          <div id="songName" class="songDetails flex">Dekha Tenu</div>
+          <!-- timeDeatils Starts -->
+          <div class="timeDeatils flex">
+            <div class="currentTime">00:00</div>
+            <!-- seekbar starts -->
+          <div class="seekBar">
+            <div class="circle"></div>
+          </div>
+          <!-- seekbar ends -->
+           <div class="songDuration">3:10</div>
+          </div>
+          <!-- timeDeatils Ends -->
+          
+          <!-- musicButtons Starts -->
+          <div class="musicButtons flex">
+            <div class="Backward buttonContainer flex">
+              <img src="./Assets/previousButton.svg" alt="Previous" />
+            </div>
+            <div class="play flex buttonContainer">
+              <img src="./Assets/playButton.svg" alt="Play" />
+            </div>
+            <div class="Forward flex buttonContainer">
+              <img src="./Assets/forwardButton.svg" alt="Forward" />
+            </div>
+          </div>
+          <!-- musicButtons Ends -->
+        </div>
+        <!-- Music player Ends -->
+      </div>
+      <!-- Right Container Ends here -->
+      <!-- <footer class="bottomFooter flex">
+        <div class="footerText">
+            <h3>Preview of Spotify</h3>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed</p>
+        </div>
+        <div class="footerButton"><button class="primary-button">Sign up free</button></div>
+    </footer> -->
+    </div>
+    <script src="./Script/script.js"></script>
+  </body>
+</html>
