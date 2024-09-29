@@ -10,7 +10,7 @@ let getSongDeatils = async() =>{
     let songList= []
     for (let index = 0; index < links.length; index++) {
         const element = links[index];
-        if(element.innerHTML.endsWith(".mp3")){
+        if(element.innerHTML.includes(".mp3")){
             songList.push(element.href)
         }
     }
